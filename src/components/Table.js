@@ -5,12 +5,12 @@ const Table = () => {
   const [planets, setPlanets] = useState([]);
   useEffect(() => {
     const reqAndSetPlanets = async () => {
-        const { results } = await (await fetch('https://swapi-trybe.herokuapp.com/api/planets/')).json();
-        setPlanets(results);
+      const { results } = await (await fetch('https://swapi-trybe.herokuapp.com/api/planets/')).json();
+      setPlanets(results);
     };
     reqAndSetPlanets();
   }, []);
-  
+
   const mapPlanets = (planet) => (
     <tr key={ planet.name }>
       <td>{planet.name}</td>
