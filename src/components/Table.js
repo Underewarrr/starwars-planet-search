@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-// import { useFilters } from '../context/Filter';
+import { useFilters } from '../context/Filter';
 
 const Table = () => {
   const { filterByName: { name },
