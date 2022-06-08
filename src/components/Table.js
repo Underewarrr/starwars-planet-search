@@ -6,12 +6,14 @@ const Table = () => {
     setFilterByName,
     filterByNumericValues,
     setFilterByNumericValues } = useFilters();
+
+  const [planets, setPlanets] = useState([]);
   const [localFilter, setLocalFilter] = useState({
     column: 'population',
     comparision: 'maior que',
     value: 0,
   });
-  const [planets, setPlanets] = useState([]);
+
   useEffect(() => {
     const reqAndSetPlanets = async () => {
       const { results } = await (await fetch('https://swapi-trybe.herokuapp.com/api/planets/')).json();
