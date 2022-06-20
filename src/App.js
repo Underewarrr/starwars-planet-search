@@ -1,13 +1,14 @@
 import React from 'react';
-import './App.css';
+import Header from './components/Header';
 import Table from './components/Table';
-import FiltersProvider from './context/Filter';
+import ApiProvider from './context/ApiProvider';
 
 function App() {
   return (
-    <FiltersProvider>
+    <ApiProvider>
+      <Header />
       <Table />
-    </FiltersProvider>
+    </ApiProvider>
   );
 }
 
