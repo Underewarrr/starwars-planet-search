@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  starwars-planet:
+    container_name: starwars-container
+    stdin_open: true
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    ports:
+      - 3001:3000
+    environment:
+      - CHOKIDAR_USEPOLLING=true   
