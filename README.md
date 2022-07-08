@@ -1,5 +1,5 @@
 # Starwars Planet Search
-***Local Build Status***
+***Build Status***
 
 [![Docker Image CI](https://github.com/Underewarrr/starwars-planet-search/actions/workflows/docker-image.yml/badge.svg)](https://github.com/Underewarrr/starwars-planet-search/actions/workflows/docker-image.yml)
 
