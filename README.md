@@ -1,6 +1,9 @@
 # Starwars Planet Search
 ***Build Status***
 
+
+![Git Hub Repo Size](https://img.shields.io/github/repo-size/underewarrr/starwars-planet-search)<br>
+
 [![Docker Image CI](https://github.com/Underewarrr/starwars-planet-search/actions/workflows/docker-image.yml/badge.svg)](https://github.com/Underewarrr/starwars-planet-search/actions/workflows/docker-image.yml)
 
 ***Repo Build/Deploy Status***
